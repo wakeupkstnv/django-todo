@@ -1,0 +1,184 @@
+
+.main{
+    padding: 1rem;
+    width: 820px;
+    height: 700px;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.70),
+      0 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+.task_maker{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+
+.name_of_todo_list{
+    font-size: 30px;
+    font-family: 'Gabarito', cursive;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.2),
+    5px 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: solid rgb(78, 180, 248, 0,25);
+}
+.task_maker{
+    margin: 20px 20px;
+}
+
+.main:hover {
+    border-bottom: 0.5rem solid #3a7dd5;
+    transition: 1s;
+}
+
+
+.main > :first-child {
+    margin-top: 0;
+  }
+
+.main > :last-child {
+    margin-bottom: 0;
+  }
+
+.button {
+    border-radius: 4px;
+    background-color: #1fcac4;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Gabarito', cursive;
+    border: 0px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.2),
+    5px 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: solid rgb(78, 180, 248, 0,25);
+}
+
+.button_to_confirm{
+    display: flex;
+    border-radius: 4px;
+    background-color: #f55e5e;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Gabarito', cursive;
+}
+  .button span {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+  }
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+.button:hover span {
+    padding-right: 25px;
+}
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(48, 52, 55) !important;
+}
+
+.button:hover{
+    background-color: #04a5a0;
+    transition: 0.2s;
+}
+.button_to_confirm:hover{
+    background-color: #ec4a4a;
+    transition: 0.2s;
+}
+
+.input-container label{
+  position: flex;
+  top:0px;
+  left:0px;
+  font-size:16px;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.input-container input{
+  border:0;
+  border-bottom:1px solid #555;
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color: black;
+}
+.input-container input:focus{
+ border:none;
+ outline:none;
+ border-bottom:2px solid rgb(78, 180, 248);
+ transition: 0.5s;
+}
+
+.new_task_box{
+    border: 0px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.2),
+    5px 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: solid rgb(78, 180, 248, 0,25);
+}
+
+.button_add {
+    border-radius: 4px;
+    background-color: #1fcac4;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Gabarito', cursive;
+}
+
+.button_add:hover{
+  background-color: #148784;
+  transition: all 0.5s;
+}
+
+.new_task_box:hover{
+  box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.4),
+  5px 5px 15px 0 rgba(0,0,0,0.08);
+  transition: all 0.5s;
+}
+
+.name_of_todo_list:hover{
+  box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.25),
+  5px 5px 15px 0 rgba(0,0,0,0.08);
+  transition: all 0.5s;
+}
+
