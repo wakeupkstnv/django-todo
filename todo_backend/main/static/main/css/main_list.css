@@ -58,7 +58,7 @@ body {
     align-items: center;
     height: 100vh; 
     margin: 0; 
-    background-color: blue;
+    background-color: rgb(48, 52, 55) !important;
 }
 
 

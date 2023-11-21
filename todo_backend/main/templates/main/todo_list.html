@@ -13,7 +13,6 @@
 </head>
 <body>
     <div class="main">
-
         <div class="task_maker" style="text-align:center;">
             <p class="name_of_todo_list"><b>🐦 To-Do List 🐦</b></p>
             <!--
@@ -27,47 +26,45 @@
             <div class="task_list">
             <div class="new_task_box">
                     <form id="todo_form" method="POST">
+                        <br>
                         {% csrf_token %}
                         <div class="input-container">
                             {{ form.title }}
-                            <label><b>NAME OF TASK</b> 🖋</label>
+                            <label><b>  NAME OF TASK</b> 🖋</label>
                         </div>
                         <div class="input-container">
                             {{ form.description }}
-                            <label>{% filter upper %} <b> task description </b>🖋{% endfilter %}</label>
+                            <label>{% filter upper %} <b>   task description </b>🖋{% endfilter %}</label>
                         </div>
-                        <span> {{ error }}</span>
                         <br>
                         <div class="all_buttons" id="create_button" style="display: flex; justify-content: center;">
                             <button type="submit" class="button_add"><b> ADD </b></button>
                         </div>
                     </form>
                 </div>
+                {% if tasks %}
+                    {% for el in tasks %}
+                    <br>
+                        <div class="task_window">
 
-                {% if main %}
-                    {% for el in main %}
-                        <br>
-                        <div class="new_task_box">
-                            <b>{{ el.title }}</b>
+                            <div class="title_task"> <b><b>Task:</b>  {{ el.title }} </b> </div>
                             <br>
-                            <b>{{ el.description }}</b>
+                            <div class="desc_task"> <b><b>Description:</b> {{ el.description }} </b> </div>
+                            <div class="del_but" id="delete_button" style="display: flex; justify-content: center;">
+                                <button class="delete_button"><b>DELETE TASK</b></button>
+                            </div>
                         </div>
                     {% endfor %}
                 {% else %}
                     <br>
                     <div class="new_task_box">
-                        <p class="enemy_text" style="text-align:center;"> 📋 <b> No tasks to display. <br> You can start adding tasks by filling out the form higher. 📝 </b>
-</p>
+                        <p class="enemy_text" style="text-align:center;"> 📋 <b> No tasks to display. <br> You can start adding tasks by filling out the form higher. 📝 </b></p>
                     </div>
                     <br>
                 {% endif %}
             </div>
 
-            <!--
-            <div class="all_buttons" id="confirm_button" style="display: flex; justify-content: center;">
-                <button class="button_to_confirm"><b>DONE</b></button>
-            </div>
-            -->
+                </div>
 
         </div>
     </div>

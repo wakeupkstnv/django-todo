@@ -8,10 +8,10 @@ class ToDoTaskForm(ModelForm):
 
         widgets = {
             "title" : TextInput(attrs={
-                'placeholder': "Write some task..."
+                'placeholder': " Write some task..."
             }),
             "description": TextInput(attrs={
-                'placeholder': "Write some description..."
+                'placeholder': " Write some description..."
             })
 
         }

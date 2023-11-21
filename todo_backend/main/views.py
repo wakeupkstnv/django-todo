@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from .models import ToDoTask
 from .forms import ToDoTaskForm
 # Create your views here.
@@ -17,10 +17,13 @@ def index(request):
             error = 'NO CORRECT TASK'
 
     form = ToDoTaskForm()
+    tasks = ToDoTask.objects.all()
 
     data = {
         'form' : form,
         'error': error,
+        'tasks': tasks,
     }
 
     return render(request, 'main/todo_list.html', data)
+

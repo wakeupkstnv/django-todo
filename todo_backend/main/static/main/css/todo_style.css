@@ -8,12 +8,13 @@
     background-color: #FFFFFF;
     border-radius: 0.5rem;
     transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+    overflow-y: auto;
 }
 
 .task_maker{
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-
+    border-radius: 1rem;
 }
 
 .name_of_todo_list{
@@ -64,21 +65,7 @@
     background-color: solid rgb(78, 180, 248, 0,25);
 }
 
-.button_to_confirm{
-    display: flex;
-    border-radius: 4px;
-    background-color: #f55e5e;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 15px;
-    width: 100px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px 20px;
-    font-family: 'Gabarito', cursive;
-}
+
   .button span {
     cursor: pointer;
     display: flex;
@@ -106,25 +93,47 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: rgb(48, 52, 55) !important;
+    background-color: rgb(254, 254, 255) !important;
+    background-image: url("https://www.pngplay.com/wp-content/uploads/9/Internet-Website-PNG-Photos.png");
+
 }
+
 
 .button:hover{
     background-color: #04a5a0;
     transition: 0.2s;
 }
-.button_to_confirm:hover{
-    background-color: #ec4a4a;
+.delete_button{
+    border-radius: 4px;
+    background-color: #cb0d36;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Gabarito', cursive;
+    border: 0px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.2),
+    5px 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: solid rgb(78, 180, 248, 0,25);
+}
+.delete_button:hover{
+    background-color: #950202;
     transition: 0.2s;
 }
 
 .input-container label{
-  position: flex;
-  top:0px;
-  left:0px;
-  font-size:16px;
-  color: black;
-  transition: all 0.5s ease-in-out;
+    position: flex;
+    top:0px;
+    left:0px;
+    font-size:16px;
+    color: black;
+    transition: all 0.5s ease-in-out;
 }
 .input-container input{
   border:0;
@@ -135,11 +144,10 @@ body {
   font-size:16px;
   color: black;
 }
+
 .input-container input:focus{
- border:none;
  outline:none;
- border-bottom:2px solid rgb(78, 180, 248);
- transition: 0.5s;
+ border-bottom:1px solid rgb(78, 180, 248);
 }
 
 .new_task_box{
@@ -182,3 +190,47 @@ body {
   transition: all 0.5s;
 }
 
+.button_to_confirm {
+    text-align: center;
+    width: 150px !important;
+    display: flex;
+    border-radius: 4px;
+    background-color: #f55e5e;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    width: 150 px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Gabarito', cursive;
+}
+
+.task_window{
+    border: 0px solid rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.2),
+    5px 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: solid rgb(78, 180, 248, 0,25);
+}
+
+.task_window:hover{
+  box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.4),
+  5px 5px 15px 0 rgba(0,0,0,0.08);
+  transition: all 0.5s;
+}
+
+.title_task{
+    padding: 20px;
+    border: 0.5px solid;
+    border-radius: 0.5rem;
+}
+
+.desc_task{
+    padding: 20px;
+    border: 0.5px solid;
+    border-radius: 0.5rem;
+}
