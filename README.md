@@ -1,7 +1,7 @@
-📋 To-Do List Beta 🚀
+📋 To-Do List 🚀
 
 Description:
-The To-Do List Beta is a web application developed with Django, designed to help you manage your tasks and responsibilities. It offers the following features:
+The To-Do List is a web application developed with Django, designed to help you manage your tasks and responsibilities. It offers the following features:
 
 📝 Task Creation: Users can quickly add new tasks by specifying a title and description.
 
