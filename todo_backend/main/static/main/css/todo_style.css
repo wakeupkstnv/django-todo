@@ -115,7 +115,7 @@ body {
     margin: 10px;
     padding: 10px 20px;
     font-family: 'Gabarito', cursive;
-    border: 0px solid rgb(255, 255, 255);
+    border: 2px solid;
     padding: 10px;
     border-radius: 0.5rem;
     box-shadow: 15px 15px 30px 15px rgba(0, 0, 0, 0.2),
@@ -136,8 +136,9 @@ body {
     transition: all 0.5s ease-in-out;
 }
 .input-container input{
-  border:0;
-  border-bottom:1px solid #555;
+    padding: 20px;
+  border:2px solid #555;
+  border-radius: 0.5rem;
   background:transparent;
   width:100%;
   padding:8px 0 5px 0;
@@ -147,7 +148,8 @@ body {
 
 .input-container input:focus{
  outline:none;
- border-bottom:1px solid rgb(78, 180, 248);
+ border: 2px solid rgb(78, 180, 248);
+ border-radius: 0.5rem;
 }
 
 .new_task_box{
@@ -224,13 +226,11 @@ body {
 }
 
 .title_task{
-    padding: 20px;
-    border: 0.5px solid;
-    border-radius: 0.5rem;
+    border: 0px solid;
 }
 
 .desc_task{
     padding: 20px;
-    border: 0.5px solid;
+    border: 2px solid;
     border-radius: 0.5rem;
 }
